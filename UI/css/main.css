@@ -5,11 +5,20 @@ html {
   padding: 0px;
   margin: 0px;
 }
+body * {
+  font-family: "Varela Round", roboto, sans-serif;
+}
 body {
-  font-family: roboto, sans-serif;
+  font-family: "Varela Round", roboto, sans-serif;
   background-image: url(../img/2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+}
+.show-nav-item{
+  height: auto !important;
+  opacity: 1 !important;
+  transition: opacity 0.3s ease-out;
 }
 nav {
   width: 100%;
@@ -19,30 +28,48 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: gray;
+  background-color: #dddddd;
   box-shadow: 1px 1px 2px #555;
+  opacity: 0.9;
 }
 nav ul li {
   float: left;
+  display: block;
 }
 nav ul li:first-child {
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: #333;
   padding: 10px 20px;
+  position: relative;
+}
+nav .nav-control {
+  position: absolute;
+  top: 3px;
+  right: 8px;
+  cursor: pointer;
+  display: none;
+}
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 5px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
 }
 nav ul li a {
   padding: 15px 20px;
   display: block;
-  color: white;
+  color: #333;
   text-align: center;
   font-size: 15px;
 }
 nav ul li a:hover:not(.active) {
   background-color: #111;
+  color: white;
 }
 nav ul li a:active {
-    background-color: #999 !important;
+  background-color: #999 !important;
 }
 nav ul li a.active {
   background-color: #4caf50;
@@ -51,13 +78,97 @@ nav ul li a.active {
 a {
   text-decoration: none;
 }
-
-.btn{
-    padding: 10px 20px;
+.content {
+  height: 100%;
+  background-color: rgba(50, 50, 50, 0.7);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.content-wrapper {
+  width: 70%;
+  margin: auto;
 }
 
-@media screen and (max-width: 600px){
-    nav ul li {
-        float: none;
-      }
+.banner-header {
+  margin: 0;
+  padding: 0;
+  font-size: 70px;
+  color: white;
+}
+.banner-text {
+  color: white;
+  padding: 0px 50px;
+}
+.text-center {
+  text-align: center;
+}
+.no-margin {
+  margin: 0;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 2px 2px 2px #111;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  background-color: #dddddd;
+  cursor: pointer;
+  color: black;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+.btn:active {
+  box-shadow: 0px 0px 0px #111;
+}
+.btn.btn-primary {
+  background-color: #4caf50;
+  color: white;
+}
+.btn.btn-action {
+  padding: 15px 35px;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.action-btn-wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  background-color: #dddddd;
+  color: #333;
+  margin-top: -100px;
+  opacity: 0.9;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  nav ul li {
+    float: none;
+  }
+  .banner-header {
+    font-size: 40px;
+    padding: 0px 20px;
+  }
+  .banner-text {
+    color: white;
+    padding: 0px 0px;
+  }
+  nav .nav-control {
+    display: inline-block;
+  }
+  nav ul li:not(:first-child){
+    height: 0;
+    opacity: 0;
+  }
 }
