@@ -92,7 +92,7 @@ a {
   text-decoration: none;
 }
 .content {
-  height: 100%;
+  min-height: 100%;
   background-color: rgba(50, 50, 50, 0.7);
   padding-top: 100px;
   padding-bottom: 100px;
@@ -122,13 +122,16 @@ a {
   padding: 10px 20px;
   border-radius: 5px;
   border: 0;
-  box-shadow: 1px 1px 2px #111;
+  box-shadow: 1px 1px 4px #111;
   font-size: 14px;
   font-weight: 400;
   outline: none;
   background-color: #dddddd;
   cursor: pointer;
   color: #333;
+}
+.btn.btn-sm{
+  padding: 5px 10px;
 }
 .btn.btn-block{
   display: block;
@@ -143,6 +146,18 @@ a {
 }
 .btn.btn-primary {
   background-color: #4c6baf;
+  color: white;
+}
+.btn.btn-success {
+  background-color: #44c42a;
+  color: white;
+}
+.btn.btn-danger {
+  background-color: #c42a3e;
+  color: white;
+}
+.btn.btn-warning {
+  background-color: #d6d32f;
   color: white;
 }
 .btn.btn-action {
