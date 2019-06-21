@@ -115,6 +115,18 @@ a {
 .text-center {
   text-align: center;
 }
+.text-primary{
+  color: #4c6baf !important;
+}
+.text-success{
+  color: #44c42a !important;
+}
+.text-warning{
+  color: rgb(153, 151, 31) !important;
+}
+.text-danger{
+  color: #c42a3e !important;
+}
 .no-margin {
   margin: 0;
 }
@@ -122,7 +134,7 @@ a {
   padding: 10px 20px;
   border-radius: 5px;
   border: 0;
-  box-shadow: 1px 1px 4px #111;
+  box-shadow: 1px 1px 5px #111;
   font-size: 14px;
   font-weight: 400;
   outline: none;
@@ -159,6 +171,11 @@ a {
 .btn.btn-warning {
   background-color: #d6d32f;
   color: white;
+}
+.btn.btn-link {
+  background-color: transparent;
+  box-shadow: none;
+  color:blue;
 }
 .btn.btn-action {
   padding: 15px 35px;

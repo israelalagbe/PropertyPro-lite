@@ -1,6 +1,6 @@
 .property-content {
   background-color: rgba(238, 238, 238, 0.9);
-  flex: 1;
+  /*  flex: 1; */
   width: 90%;
   min-height: 500px;
   height: auto;
@@ -10,8 +10,8 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.property{
-    height: auto;
+.property {
+  height: fit-content;
 }
 .property img {
   width: 100%;
@@ -22,3 +22,11 @@
   padding-top: 30px;
 }
 
+.card.property:hover:not(.no-hover) {
+  opacity: 0.8;
+  background-color: rgb(245, 235, 235);
+}
+
+.card.property:active {
+  box-shadow: 0px 0px 0px #555;
+}
