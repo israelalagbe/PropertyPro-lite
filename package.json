@@ -1,0 +1,20 @@
+{
+  "name": "property-lite-pro",
+  "version": "1.0.0",
+  "description": "Property Pro Lite is a platform where people can create and/or search properties for sale or rent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d UI"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/israelalagbe/PropertyPro-lite.git"
+  },
+  "author": "Israel Alagbe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/israelalagbe/PropertyPro-lite/issues"
+  },
+  "homepage": "https://israelalagbe.github.io/PropertyPro-lite"
+}
