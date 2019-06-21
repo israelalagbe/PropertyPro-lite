@@ -23,7 +23,7 @@
 }
 
 .card.property:hover:not(.no-hover) {
-  opacity: 0.8;
+  opacity: 0.95;
   background-color: rgb(245, 235, 235);
 }
 
