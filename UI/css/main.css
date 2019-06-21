@@ -127,8 +127,25 @@ a {
 .text-danger{
   color: #c42a3e !important;
 }
+
 .no-margin {
   margin: 0;
+}
+.alert{
+    padding: 20px;
+    background-color: #c42a3e;
+    margin: 2px auto;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+.bg-success{
+  background-color: #44c42a;
+  color:white;
+}
+.bg-danger{
+  background-color: #44c42a;
+  color:white;
 }
 .btn {
   padding: 10px 20px;
@@ -200,6 +217,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.hidden{
+  display: none;
 }
 @media screen and (max-width: 600px) {
   nav ul li {
