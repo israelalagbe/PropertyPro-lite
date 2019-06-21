@@ -32,6 +32,10 @@
         </ul>
     </nav>
     <div class="content">
+        <div class="alert hidden">
+            Hello world
+        </div>
+        <button class="btn btn-primary" >Add New</button>
         <div class="property-content">
             <div class="card property no-hover">
                 <img src="./img/property1.jpg" />
@@ -80,7 +84,7 @@
                 <div class="card-action">
                     <a class="btn btn-sm btn-link text-success">Edit</a>
                     <a class="btn btn-sm btn-link text-warning">Mark Sold</a>
-                    <a class="btn btn-sm btn-link text-danger">Delete</a>
+                    <a class="btn btn-sm btn-link text-danger delete-button">Delete</a>
                 </div>
             </div>
 
@@ -92,7 +96,9 @@
         <br>
         <p class="no-margin"><a href="#">Login</a> | <a href="#">Register</a></p>
     </footer>
+    <script src='./js/LocalStorage.js'></script>
     <script src='./js/main.js'></script>
+    <script src='./js/property.js'></script>
 </body>
 
 </html>
