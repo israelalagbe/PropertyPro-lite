@@ -6,16 +6,16 @@ class LocalStorage {
      * @param {Storage} storage 
      */
     constructor(storage) {
-        this.storage = storage
+        this._storage = storage
     }
     async getRaw(key) {
-        return this.storage.getItem(key);
+        return this._storage.getItem(key);
     }
     async get(key, defaultValue) {
         return JSON.parse(await this.getRaw(key)) || defaultValue;
     }
     async setRaw(key, value) {
-        return this.storage.setItem(key, value);
+        return this._storage.setItem(key, value);
     }
     // multiGet(...args){
     //     return this.asyncStorage.multiGet(...args)
@@ -27,7 +27,7 @@ class LocalStorage {
         return this.setRaw(key, JSON.stringify(value))
     }
     async remove(key) {
-        return this.storage.removeItem(key)
+        return this._storage.removeItem(key)
     }
     setFlash(key,value){
         this.set("flash-"+key, value)
