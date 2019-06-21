@@ -25,7 +25,19 @@ form{
     border: 1px solid #ced4da;
 
 }
+.form-control textarea{
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 5px;
+    /* outline: 0px; */
+    display: block;
+    /* To prevent the input from overflowing */
+    box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    border: 1px solid #ced4da;
 
+}
 .form-control input:focus{
     /* outline: 2px solid blue; */
 }
