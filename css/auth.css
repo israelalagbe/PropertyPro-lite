@@ -1,0 +1,19 @@
+.auth-wrapper {
+    width: 400px;
+    background-color: #dddddd;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.auth-wrapper label {}
+
+@media screen and (max-width: 600px) {
+    .auth-wrapper {
+        width: 97%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
