@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/property.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <ul>
+            <li>
+
+                <span>Property Pro Lite </span>
+                <div class="nav-control">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </li>
+            <li class="nav-collapse"><a href="property_listing.html">Property Listings</a></li>
+            <li class="nav-collapse"><a class="active" href="my_properties.html">My Properties</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="alert hidden">
+            Hello world
+        </div>
+        <a href='add_property.html' class="btn btn-primary floating-button">Add New Property</a>
+        <div class="property-content">
+            <div class="card property-details no-hover">
+                <img src="img/property1.jpg" />
+                <div>
+                    <span class="card-title">Plot of land</span>
+                    <span class="card-desc text-success">#339</span>
+                    <div class="">18A, OluArisegbede street, Shomolu Lagos</div>
+                    <div class="">2 bedroom flat</div>
+                </div>
+                <div class="">
+                    <a href="edit_property.html" class="btn btn-tn btn-link text-success">Edit</a>
+                    <a class="btn btn-tn btn-link text-warning">Mark Sold</a>
+                    <a class="btn btn-tn btn-link text-danger delete-button">Delete</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h4 class="no-margin"> Copyright &copy; 2019 - Property Pro Lite</h4>
+        <p class="no-margin">Best Property for the lowest rate</p>
+        <br>
+        <p class="no-margin"><a href="#">Login</a> | <a href="#">Register</a></p>
+    </footer>
+    <script src='js/LocalStorage.js'></script>
+    <script src='js/main.js'></script>
+    <script src='js/property.js'></script>
+</body>
+
+</html>
