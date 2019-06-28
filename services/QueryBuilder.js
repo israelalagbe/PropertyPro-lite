@@ -1,3 +1,5 @@
+const whereCondition = require('./whereCondition');
+
 class QueryBuilder {
   /**
  *
@@ -20,16 +22,11 @@ class QueryBuilder {
    * @param {Object} conditions
    */
   where(conditions) {
-    const conditionsKeys = Object.keys(conditions);
-    if (conditionsKeys.length === 0) { return new QueryBuilder(this.items); }
-    const filteredItems = this.items.filter((item) => {
-      return conditionsKeys.every(key => conditions[key] === item[key]);
-    });
-    return new QueryBuilder(filteredItems);
+    return new QueryBuilder(whereCondition(this.items, conditions));
   }
 
   get() {
-    return this.items;
+    return [...this.items];
   }
 
   count() {

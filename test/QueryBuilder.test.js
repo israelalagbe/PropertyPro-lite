@@ -8,10 +8,10 @@ describe('QueryBuilder', () => {
   describe('#find(id)', () => {
     const qb = new QueryBuilder([{id:1}])
     it('Should not return null', () => {
-      assert.notDeepEqual(qb.find(1), null)
+      assert.notEqual(qb.find(1), null)
     });
     it('Should return document with ID 1', () => {
-      assert.deepEqual(qb.find(1).id,1);
+      assert.equal(qb.find(1).id,1);
     });
     it('should return null when the value is not present', () => {
       assert.equal(qb.find(2), null)
@@ -39,10 +39,10 @@ describe('QueryBuilder', () => {
   describe('#first', () => {
     const qb = new QueryBuilder([{id:1},{id:2}])
     it('Should not return null', () => {
-      assert.notDeepEqual(qb.first(), null)
+      assert.notEqual(qb.first(), null)
     });
     it('Should return document with ID 1', () => {
-      assert.deepEqual(qb.first().id,1);
+      assert.equal(qb.first().id,1);
     });
     it('should return null when the value is not present', () => {
       const qb = new QueryBuilder([])
