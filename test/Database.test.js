@@ -54,5 +54,11 @@ describe('Database', () => {
                 db.updateDocument('user', {id: 20, age: 50})
             });
         });
+        it('Should override existing values in the document', () => {
+            const db = new DB()
+            let document=db.createDocument('user', {name: "Israel"})
+            db.updateDocument('user', {id: document.id, name: "Steven"})
+            assert.deepEqual(db.collection('user').first(),{id: document.id, name: "Steven"})
+        });
     });
 });
