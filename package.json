@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha",
     "deploy": "gh-pages -d UI",
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www --exec babel-node"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
@@ -31,6 +31,10 @@
     "validatorjs": "^3.15.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "chai": "^4.2.0",
     "eslint": "^4.12.0",
     "eslint-config-airbnb-base": "^13.1.0",
