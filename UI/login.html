@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+    <nav>
+
+        <ul>
+            <li>
+
+                <span>Property Pro Lite </span>
+                <div class="nav-control">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </li>
+            <li class="nav-collapse"><a href="index.html">Home</a></li>
+            <li class="nav-collapse"><a class="active" href="login.html">Login</a></li>
+            <li class="nav-collapse"><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="auth-wrapper">
+            <form method="GET" action="property_listing.html">
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-control">
+                    <label>Password</label>
+                    <input type="password" name="password" required>
+                </div>
+                <div class="form-control">
+                    <button class="btn btn-primary btn-block">Submit</button>
+                </div>
+                
+                <div class="form-control">
+                        Don't have an account? <a href="register.html">Register</a>
+                </div>
+                <div class="form-control">
+                        Forgot Password? <a href="forgot_password.html">Click Here</a>
+                    </div>
+
+            </form>
+        </div>
+
+    </div>
+    <footer>
+        <h4 class="no-margin"> Copyright &copy; 2019 - Property Pro Lite</h4>
+        <p class="no-margin">Best Property for the lowest rate</p>
+        <br>
+        <p class="no-margin"><a href="#">Login</a> | <a href="#">Register</a></p>
+    </footer>
+    <script src='js/main.js'></script>
+</body>
+
+</html>

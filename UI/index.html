@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,46 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <nav>
-        
+
         <ul>
-                <li> Property Pro Lite </li>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+            <li>
+                
+                 <span>Property Pro Lite </span>
+                 <div class="nav-control">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                </div>
             </li>
+            <li class="nav-collapse"><a class="active" href="index.html">Home</a></li>
+            <li class="nav-collapse"><a href="login.html">Login</a></li>
+            <li class="nav-collapse"><a href="register.html">Register</a></li>
         </ul>
     </nav>
-    <div style="height: 100%;background-color:rgba(50, 50, 50, 0.5);padding-top:100px;">
-        <h1 style="margin:0;padding:0;text-align:center;font-size:70px;color:white">Best Property for the lowest rate</h1>
+    <div class="content">
+        <div class="content-wrapper">
+            <h1 class="banner-header text-center">Best Property for the lowest rate</h1>
+            <p class="banner-text text-center">Search thousands of up-to-date property listings on our easy-to-use
+                website. Upload your property as an agent for users all over the world to see Narrow down your options
+                by choosing the refinements <br> that are most important to you</p>
 
-        <div style="text-align: center;">
-            <button class="btn">Get Started</button><button class="btn">Login</button>
+            <div class="action-btn-wrapper">
+                <a href="register.html" class="btn btn-primary btn-action">Get Started</a>
+                <a href="login.html" class="btn btn-action">Existing User</a>
+            </div>
         </div>
+
     </div>
+    <footer>
+        <h4 class="no-margin"> Copyright &copy; 2019 - Property Pro Lite</h4>
+        <p class="no-margin">Best Property for the lowest rate</p>
+        <br>
+        <p class="no-margin"><a href="#">Login</a> | <a href="#">Register</a></p>
+    </footer>
+    <script src='js/main.js'></script>
 </body>
+
 </html>

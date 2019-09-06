@@ -1,0 +1,32 @@
+.card {
+  display: block;
+  width: 250px;
+  height: 250px;
+  box-shadow: 1px 1px 2px silver;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card .card-action {
+  padding-bottom: 20px;
+  /* padding-left: 20px; */
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  display: block;
+  padding: 2px 4px 0px 4px;
+  color: rgb(13, 13, 39);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.card-desc {
+  display: block;
+  padding: 0px 4px 4px 10px;
+  font-weight: bold;
+}
